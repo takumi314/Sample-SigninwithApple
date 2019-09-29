@@ -10,6 +10,8 @@ import SwiftUI
 import AuthenticationServices
 
 struct ContentView: View {
+    @State var appleSignInDelegates: SignInWithAppleDelegates! = nil
+
     var body: some View {
         ZStack {
             Color.green.edgesIgnoringSafeArea(.all)
@@ -38,12 +40,26 @@ extension ContentView {
     private func showAppleLogin() {
         // 1. All sign in requests need an ASAuthorizationAppleIDRequest.
         let request = ASAuthorizationAppleIDProvider().createRequest()
-
         // 2. Specify the type of end user data you need to know.
         request.requestedScopes = [.fullName, .email]
 
+        performSignIn(using: [request])
+    }
+
+    private func performSignIn(using requests: [ASAuthorizationRequest]) {
+        appleSignInDelegates = SignInWithAppleDelegates() { success in
+        if success {
+            // update UI
+        } else {
+            // show the user an error
+            }
+        }
+
         // 3. Generate the controller which will display the sign in dialog.
-        let controller = ASAuthorizationController(authorizationRequests: [request])
+        let controller = ASAuthorizationController(authorizationRequests: requests)
+        controller.delegate = appleSignInDelegates
+
+        controller.performRequests()
     }
 
 }
