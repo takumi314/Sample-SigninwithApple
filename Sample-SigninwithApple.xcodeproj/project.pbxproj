@@ -15,6 +15,7 @@
 		E1C554EB233F697C0097784E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C554E9233F697C0097784E /* LaunchScreen.storyboard */; };
 		E1C554F4234050B80097784E /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C554F3234050B80097784E /* SignInWithApple.swift */; };
 		E1C554F6234056F00097784E /* UserAndPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C554F5234056F00097784E /* UserAndPassword.swift */; };
+		E1C554F82340944B0097784E /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C554F72340944B0097784E /* SignInWithAppleDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E1C554F2233F6C980097784E /* Sample-SigninwithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-SigninwithApple.entitlements"; sourceTree = "<group>"; };
 		E1C554F3234050B80097784E /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
 		E1C554F5234056F00097784E /* UserAndPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAndPassword.swift; sourceTree = "<group>"; };
+		E1C554F72340944B0097784E /* SignInWithAppleDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E1C554E6233F697C0097784E /* Preview Content */,
 				E1C554F3234050B80097784E /* SignInWithApple.swift */,
 				E1C554F5234056F00097784E /* UserAndPassword.swift */,
+				E1C554F72340944B0097784E /* SignInWithAppleDelegates.swift */,
 			);
 			path = "Sample-SigninwithApple";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				E1C554F4234050B80097784E /* SignInWithApple.swift in Sources */,
 				E1C554E3233F69750097784E /* ContentView.swift in Sources */,
 				E1C554F6234056F00097784E /* UserAndPassword.swift in Sources */,
+				E1C554F82340944B0097784E /* SignInWithAppleDelegates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
