@@ -24,6 +24,7 @@
 		E1C554E7233F697C0097784E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1C554EA233F697C0097784E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C554EC233F697C0097784E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C554F2233F6C980097784E /* Sample-SigninwithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-SigninwithApple.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		E1C554DD233F69750097784E /* Sample-SigninwithApple */ = {
 			isa = PBXGroup;
 			children = (
+				E1C554F2233F6C980097784E /* Sample-SigninwithApple.entitlements */,
 				E1C554DE233F69750097784E /* AppDelegate.swift */,
 				E1C554E0233F69750097784E /* SceneDelegate.swift */,
 				E1C554E2233F69750097784E /* ContentView.swift */,
@@ -284,9 +286,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Sample-SigninwithApple/Sample-SigninwithApple.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Sample-SigninwithApple/Preview Content\"";
-				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Sample-SigninwithApple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,6 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi.Sample-SigninwithApple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SampleSigninwithApple_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,9 +309,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Sample-SigninwithApple/Sample-SigninwithApple.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Sample-SigninwithApple/Preview Content\"";
-				DEVELOPMENT_TEAM = 73CEKQYV9L;
+				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Sample-SigninwithApple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi.Sample-SigninwithApple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SampleSigninwithApple_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
