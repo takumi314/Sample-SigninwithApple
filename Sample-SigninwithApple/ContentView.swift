@@ -10,12 +10,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        ZStack {
+            Color.green.edgesIgnoringSafeArea(.all)
+
+            VStack {
+                Image("sample_car")
+                    .resizable()
+                    .aspectRatio(contentMode: ContentMode.fit)
+                    .padding()
+                // TextFields for filling User and Password
+                UserAndPassword()
+                    .padding()
+                // Add Sign in with Apple UI View here
+                SignInWithApple()
+                    .frame(width: 280, height: 60)
+            }
+
+        }
+        .onAppear()
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+#endif
